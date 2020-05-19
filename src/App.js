@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import './App.css';
 import Modal from './Component/Modal/Modal';
 
+
 const App = () => {
 
   const [dropdown, setDropdown] = useState(""); 
@@ -26,10 +27,12 @@ const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <body>
+      <header className="App-header">        
         <button onClick={toggleDropdown}>Click Here!</button>
         <Modal className={dropdown} modalRef={modalRef}/>
       </header>
+      </body>
     </div>
   );
 }
